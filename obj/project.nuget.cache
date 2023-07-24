@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qAXcnIaTLP8irPiezn+ZniFlYJmrx6GV59G5cm4U1hu9ynm31QGkxna3KRCYxvkugiv/l6xHnOrTNR6Nkfkypw==",
+  "dgSpecHash": "lMR0SYJFPk57bw2qIzbyTa2hVIIcL+5OHs65MYdH0ypcT8TaQuTRZFI29z29IaDa+7zQT1vzofTXI91Vdgvsuw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jmoreno\\Desktop\\Curso Xamarin\\capacitacionmobile_Estiven_API_Xamarin\\Estiven_API_Xamarin\\Estiven_API_Xamarin.csproj",
+  "projectFilePath": "C:\\Users\\jmoreno\\Documents\\GitHub\\Api_app_xamarin\\Estiven_API_Xamarin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jmoreno\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jmoreno\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
