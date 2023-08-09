@@ -11671,11 +11671,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jmoreno\\Documents\\GitHub\\Api_app_xamarin\\Estiven_API_Xamarin.csproj",
+      "projectUniqueName": "C:\\Api_app_xamarin_2\\Estiven_API_Xamarin.csproj",
       "projectName": "Estiven_API_Xamarin",
-      "projectPath": "C:\\Users\\jmoreno\\Documents\\GitHub\\Api_app_xamarin\\Estiven_API_Xamarin.csproj",
+      "projectPath": "C:\\Api_app_xamarin_2\\Estiven_API_Xamarin.csproj",
       "packagesPath": "C:\\Users\\jmoreno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jmoreno\\Documents\\GitHub\\Api_app_xamarin\\obj\\",
+      "outputPath": "C:\\Api_app_xamarin_2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
