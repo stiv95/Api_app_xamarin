@@ -1,4 +1,9 @@
-﻿namespace Estiven_API_Xamarin.Data
+﻿using Estiven_API_Xamarin.Enumerations;
+using Microsoft.EntityFrameworkCore;
+using Estiven_API_Xamarin.Data.Models;
+using Estiven_API_Xamarin.API.Data.Models;
+
+namespace Estiven_API_Xamarin.Data
 {
     public class SeedDb
     {
@@ -10,7 +15,6 @@
             this.context = context;
             this.random = new Random();
         }
-
         public async Task SeedAsync()
         {
             await this.context.Database.EnsureCreatedAsync();
@@ -22,6 +26,24 @@
                 this.AddClient("Third Client");
                 await this.context.SaveChangesAsync();
             }
+
+            if (!this.context.UserRoles.Any())
+            {
+                this.AddUserRole("Administrator", RoleType.SuperAdmin);
+                this.AddUserRole("Staff", RoleType.Staff);
+                this.AddUserRole("Guest", RoleType.Guest);
+                await this.context.SaveChangesAsync();
+            }
+
+            if (!this.context.Users.Any())
+            {
+                this.AddUser("AdminUser", "123", 1);
+                this.AddUser("StaffUser", "123", 2);
+                this.AddUser("GuestUser", "123", 3);
+                await this.context.SaveChangesAsync();
+            }
+
+            await this.context.Database.MigrateAsync();
         }
 
         private void AddClient(string name)
@@ -33,6 +55,23 @@
             });
         }
 
-    }
+        private void AddUserRole(string roleName, RoleType roleType)
+        {
+            this.context.UserRoles.Add(new Models.UserRole
+            {
+                Name = roleName,
+                Type = roleType
+            });
+        }
 
+        private void AddUser(string userId, string password, long userRoleId)
+        {
+            this.context.Users.Add(new Models.User
+            {
+                UserName = userId,
+                Password = password,
+                RoleId = userRoleId
+            });
+        }
+    }
 }
