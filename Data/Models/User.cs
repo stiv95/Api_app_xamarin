@@ -1,12 +1,10 @@
-﻿using Microsoft.AspNetCore.Identity;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Estiven_API_Xamarin.API.Data.Models
+namespace Estiven_API_Xamarin.Data.Models
 {
-    public class User : IdentityUser
+    public class User
     {
-
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
@@ -19,8 +17,8 @@ namespace Estiven_API_Xamarin.API.Data.Models
 
         public long RoleId { get; set; }
 
-        [ForeignKey("RoleId")]
+        [ForeignKey(nameof(RoleId))]
         public virtual UserRole Role { get; set; }
-    }
 
+    }
 }

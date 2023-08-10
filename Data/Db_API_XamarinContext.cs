@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Estiven_API_Xamarin.Data.Models;
-using Estiven_API_Xamarin.API.Data.Models;
 
 namespace Estiven_API_Xamarin.Data
 {

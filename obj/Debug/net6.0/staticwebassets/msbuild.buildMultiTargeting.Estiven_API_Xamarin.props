@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Estiven_API_Xamarin.props" />
+</Project>

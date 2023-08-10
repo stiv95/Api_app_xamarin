@@ -2,11 +2,10 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Estiven_API_Xamarin.API.Data.Models
+namespace Estiven_API_Xamarin.Data.Models
 {
     public class UserRole
     {
-
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long RoleId { get; set; }
