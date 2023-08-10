@@ -826,3 +826,4 @@ C:\Api_app_xamarin_2\obj\Debug\net6.0\refint\Estiven_API_Xamarin.dll
 C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.pdb
 C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.genruntimeconfig.cache
 C:\Api_app_xamarin_2\obj\Debug\net6.0\ref\Estiven_API_Xamarin.dll
+C:\Api_app_xamarin_2\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

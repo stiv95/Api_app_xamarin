@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "e5UMTOzQ+irTy7ev3UNCoVPElURMzFEfTG6xXJYtPkFgxqD254nfp6n+OP/A65T4pEM2Xe0U503AcaRBa0HpKg==",
+  "dgSpecHash": "U7i0G9c+keI1Wa+xzqtMynVYQf+yTaFWH+q3Gp3nR+aRrQq3C7NJksCroSSm5ZLnKXrdw1FgDrvH1BpBfvsIcA==",
   "success": true,
   "projectFilePath": "C:\\Api_app_xamarin_2\\Estiven_API_Xamarin.csproj",
   "expectedPackageFiles": [
@@ -59,6 +59,7 @@
     "C:\\Users\\jmoreno\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\jmoreno\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\jmoreno\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
+    "C:\\Users\\jmoreno\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.20\\microsoft.aspnetcore.authentication.jwtbearer.6.0.20.nupkg.sha512",
     "C:\\Users\\jmoreno\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.0\\microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
     "C:\\Users\\jmoreno\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\jmoreno\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",

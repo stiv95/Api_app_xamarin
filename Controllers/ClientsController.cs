@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Estiven_API_Xamarin.Data;
 using Estiven_API_Xamarin.Data.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Estiven_API_Xamarin.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ClientsController : ControllerBase
@@ -53,6 +55,7 @@ namespace Estiven_API_Xamarin.Controllers
         // PUT: api/Clients/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+
         public async Task<IActionResult> PutClient(long id, Client client)
         {
             if (id != client.Id)
