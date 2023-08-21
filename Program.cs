@@ -8,6 +8,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 using Estiven_API_Xamarin.API.Services;
+using Estiven_API_Xamarin.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<Db_API_XamarinContext>(options =>
@@ -24,6 +25,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<SeedDb>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<IListUserService, ListUserService>();
 
 builder.Services.AddSwaggerGen(option =>
 {

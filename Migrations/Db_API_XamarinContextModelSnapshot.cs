@@ -33,6 +33,12 @@ namespace Estiven_API_Xamarin.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<double>("Latitude")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Longitude")
+                        .HasColumnType("float");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -40,6 +46,42 @@ namespace Estiven_API_Xamarin.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Client", (string)null);
+                });
+
+            modelBuilder.Entity("Estiven_API_Xamarin.Data.Models.ListUser", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<int>("Cantidad")
+                        .HasColumnType("int");
+
+                    b.Property<long>("IdUser")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Marca")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NameList")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NameProduct")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("ValorUnitario")
+                        .HasColumnType("real");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdUser");
+
+                    b.ToTable("ListUser", (string)null);
                 });
 
             modelBuilder.Entity("Estiven_API_Xamarin.Data.Models.User", b =>
@@ -86,6 +128,17 @@ namespace Estiven_API_Xamarin.Migrations
                     b.HasKey("RoleId");
 
                     b.ToTable("UserRole", (string)null);
+                });
+
+            modelBuilder.Entity("Estiven_API_Xamarin.Data.Models.ListUser", b =>
+                {
+                    b.HasOne("Estiven_API_Xamarin.Data.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("IdUser")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Estiven_API_Xamarin.Data.Models.User", b =>

@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Estiven_API_Xamarin.Data;
 using Estiven_API_Xamarin.Data.Models;
 using Microsoft.AspNetCore.Authorization;
+using Estiven_API_Xamarin.API.Data.Dto;
 
 namespace Estiven_API_Xamarin.Controllers
 {
@@ -17,10 +18,12 @@ namespace Estiven_API_Xamarin.Controllers
     public class ClientsController : ControllerBase
     {
         private readonly Db_API_XamarinContext _context;
-
+        private readonly Random random;
         public ClientsController(Db_API_XamarinContext context)
         {
             _context = context;
+            random = new Random();
+
         }
 
         // GET: api/Clients
@@ -36,7 +39,7 @@ namespace Estiven_API_Xamarin.Controllers
 
         // GET: api/Clients/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Client>> GetClient(long id)
+        public async Task<ActionResult<ClientDetailDto>> GetClient(long id)
         {
           if (_context.Clients == null)
           {
@@ -49,8 +52,50 @@ namespace Estiven_API_Xamarin.Controllers
                 return NotFound();
             }
 
-            return client;
+            var clientDetail = CreateClientDetails(client);
+
+            return clientDetail;
+
         }
+        private ClientDetailDto CreateClientDetails(Client client)
+        {
+            var clientDetail = new ClientDetailDto
+            {
+                Id = client.Id,
+                Name = client.Name,
+                Dna = client.Dna,
+                Latitude = client.Latitude,
+                Longitude = client.Longitude,
+                Age = random.Next(15, 65),
+                Weight = random.Next(40, 120),
+                Height = random.Next(150, 210)
+            };
+            clientDetail.LifeExpectancy = CalculateLifeExpectancy(clientDetail.Age, clientDetail.Weight, clientDetail.Height);
+            return clientDetail;
+        }
+
+        private double CalculateLifeExpectancy(int age, int weight, int height)
+        {
+            var BaseLifeExpectancy = 80.0; // Example base life expectancy in years
+            var AgeFactor = 0.02; // Example factor for age
+            var WeightFactor = 0.01; // Example factor for weight
+            var HeightFactor = 0.005; // Example factor for height
+
+            // Calculate the adjustments based on age, weight, and height
+            double ageAdjustment = (age - 30) * AgeFactor;
+            double weightAdjustment = (weight - 70) * WeightFactor;
+            double heightAdjustment = (height - 170) * HeightFactor;
+
+            // Calculate the final life expectancy based on adjustments
+            double adjustedLifeExpectancy = BaseLifeExpectancy + ageAdjustment - weightAdjustment - heightAdjustment;
+
+            // Calculate the percentage of life expectancy
+            double percentage = (age / adjustedLifeExpectancy) * 100;
+
+            return Math.Round(percentage);
+        }
+
+
 
         // PUT: api/Clients/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

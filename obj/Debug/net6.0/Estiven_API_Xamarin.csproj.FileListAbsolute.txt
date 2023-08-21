@@ -532,6 +532,13 @@ C:\Curso Xamarin\API_XAMARIN\API\Estiven_API_Xamarin\obj\Debug\net6.0\Estiven_AP
 C:\Curso Xamarin\API_XAMARIN\API\Estiven_API_Xamarin\obj\Debug\net6.0\refint\Estiven_API_Xamarin.dll
 C:\Curso Xamarin\API_XAMARIN\API\Estiven_API_Xamarin\obj\Debug\net6.0\Estiven_API_Xamarin.pdb
 C:\Curso Xamarin\API_XAMARIN\API\Estiven_API_Xamarin\obj\Debug\net6.0\ref\Estiven_API_Xamarin.dll
+C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.csproj.AssemblyReference.cache
+C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.AssemblyInfoInputs.cache
+C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.AssemblyInfo.cs
+C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.csproj.CoreCompileInputs.cache
+C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.MvcApplicationPartsAssemblyInfo.cs
+C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.MvcApplicationPartsAssemblyInfo.cache
 C:\Api_app_xamarin_2\bin\Debug\net6.0\appsettings.Development.json
 C:\Api_app_xamarin_2\bin\Debug\net6.0\appsettings.json
 C:\Api_app_xamarin_2\bin\Debug\net6.0\Estiven_API_Xamarin.exe
@@ -544,6 +551,7 @@ C:\Api_app_xamarin_2\bin\Debug\net6.0\Azure.Identity.dll
 C:\Api_app_xamarin_2\bin\Debug\net6.0\Humanizer.dll
 C:\Api_app_xamarin_2\bin\Debug\net6.0\MessagePack.dll
 C:\Api_app_xamarin_2\bin\Debug\net6.0\MessagePack.Annotations.dll
+C:\Api_app_xamarin_2\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Api_app_xamarin_2\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Api_app_xamarin_2\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Api_app_xamarin_2\bin\Debug\net6.0\Microsoft.Build.dll
@@ -805,13 +813,6 @@ C:\Api_app_xamarin_2\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Run
 C:\Api_app_xamarin_2\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Api_app_xamarin_2\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Api_app_xamarin_2\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.csproj.AssemblyReference.cache
-C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.GeneratedMSBuildEditorConfig.editorconfig
-C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.AssemblyInfoInputs.cache
-C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.AssemblyInfo.cs
-C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.csproj.CoreCompileInputs.cache
-C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.MvcApplicationPartsAssemblyInfo.cs
-C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.MvcApplicationPartsAssemblyInfo.cache
 C:\Api_app_xamarin_2\obj\Debug\net6.0\staticwebassets\msbuild.Estiven_API_Xamarin.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Api_app_xamarin_2\obj\Debug\net6.0\staticwebassets\msbuild.build.Estiven_API_Xamarin.props
 C:\Api_app_xamarin_2\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Estiven_API_Xamarin.props
@@ -826,4 +827,3 @@ C:\Api_app_xamarin_2\obj\Debug\net6.0\refint\Estiven_API_Xamarin.dll
 C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.pdb
 C:\Api_app_xamarin_2\obj\Debug\net6.0\Estiven_API_Xamarin.genruntimeconfig.cache
 C:\Api_app_xamarin_2\obj\Debug\net6.0\ref\Estiven_API_Xamarin.dll
-C:\Api_app_xamarin_2\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
