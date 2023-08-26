@@ -9,6 +9,7 @@ using Estiven_API_Xamarin.Data;
 using Estiven_API_Xamarin.Data.Models;
 using Estiven_API_Xamarin.Data.Dto;
 using Estiven_API_Xamarin.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Estiven_API_Xamarin.Controllers
 {
@@ -88,8 +89,10 @@ namespace Estiven_API_Xamarin.Controllers
 
         // POST: api/ListUsers
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost("listUser")]
-        public async Task<ActionResult<ListUser>> PostListUser(ListUserDto listUser)
+        [Authorize]
+        [HttpPost]
+        //[Route("PostListUser")]
+        public async Task<ActionResult> PostListUser(ListUserDto listUser)
         {
            ListUser listUserConv = this._listMastter.listmarket(listUser);
 
@@ -99,8 +102,8 @@ namespace Estiven_API_Xamarin.Controllers
           }
             _context.ListUser.Add(listUserConv);
             await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetListUser", new { id = listUserConv.Id }, listUserConv);
+            return Ok();
+            //return CreatedAtAction("GetListUser", new { id = listUserConv.Id }, listUserConv);
         }
 
         // DELETE: api/ListUsers/5
